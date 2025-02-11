@@ -15,7 +15,7 @@
 
 <body class="font-roboto">
     <!-- Header -->
-    <header class="bg-[#000957] text-white py-4">
+    <header class="bg-[#000957] text-white py-4 fixed top-0 left-0 w-full z-50">
         <div class="container mx-auto flex justify-between items-center px-4">
             <!-- Logo -->
             <a href="index.html">
@@ -28,8 +28,7 @@
             </a>
             <!-- Hamburger Menu -->
             <button class="block md:hidden text-white text-2xl focus:outline-none" id="menu-toggle">
-                <i class="fas fa-bars">
-                </i>
+                <i class="fas fa-bars"></i>
             </button>
             <!-- Navigation -->
             <nav class="hidden md:flex space-x-4" id="menu">
@@ -64,6 +63,7 @@
             </a>
         </div>
     </header>
+
     <div class="fixed bottom-6 right-6 z-50"> <!-- Tambahkan z-50 -->
         <a href="https://wa.me/6287780759897" target="_blank"
             class="flex items-center bg-green-500 text-white py-3 px-4 rounded-full shadow-lg hover:bg-green-700 transition duration-300">
@@ -170,13 +170,12 @@
         <div class="container mx-auto px-4">
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
                 <!-- Logo and Company Name -->
-                <div class="flex flex-col items-center md:items-start">
-                    <img alt="HR Group logo with a crown on top" class="ml-24 mb-4 w-[100px] h-[100px]" height="100"
-                        src="Assets/logo.png" width="100">
-                    <p class="text-center md:text-left font-bold text-lg text-[#FFEB00]">
+                <div class="flex flex-col items-center md:items-start text-center md:text-left">
+                    <img alt="HR Group logo with a crown on top" class="mx-auto mb-4 w-[100px] h-[100px]" height="100"
+                        src="Assets/logo.png" width="100" />
+                    <p class="font-bold text-lg text-[#FFEB00]">
                         PT. PALWASHA WIRATAMA MANDIRI
                     </p>
-                    </img>
                 </div>
                 <!-- Navigation Links -->
                 <div class="flex flex-col text-center md:text-left">
