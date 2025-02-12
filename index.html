@@ -1,275 +1,427 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PT. PALWASHA WIRATAMA MANDIRI</title>
-    <link rel="icon" type="image/png" href="Assets/logo.png">
+    <link rel="icon" type="image/png" href="Assets/logo.png" />
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-</head>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<body class="font-roboto">
-    <!-- Header -->
-    <header class="bg-[#000957] text-white py-4">
-        <div class="container mx-auto flex justify-between items-center px-4">
-            <!-- Logo -->
-            <a href="index.html">
-                <div class=" flex items-center">
-
-                    <img src=" Assets/logo.png" alt="Logo" class="h-10 mr-3">
-                    <span class="text-lg font-bold">PT. PALWASHA WIRATAMA MANDIRI</span>
-                </div>
-            </a>
-            <!-- Hamburger Menu -->
-            <button id=" menu-toggle" class="block md:hidden text-white text-2xl focus:outline-none">
-                <i class="fas fa-bars"></i>
-            </button>
-            <!-- Navigation -->
-            <nav id="menu" class="hidden md:flex space-x-4">
-                <a href="index.html" class="hover:underline font-bold py-2 px-4">HOME</a>
-                <a href="tentang-kami.html" class="hover:underline font-bold py-2 px-4">TENTANG KAMI</a>
-                <a href="properti.html" class="hover:underline font-bold py-2 px-4">PRODUK PERUMAHAN</a>
-                <a href="kontak-kami.html" class="bg-orange-900 text-white text-sm font-medium rounded-full py-2 px-4
-                                                           hover:bg-orange-700 transition duration-300 ease-in-out">
-                    KONTAK KAMI
-                </a>
-            </nav>
-        </div>
-        <!-- Mobile Navigation -->
-        <div id="mobile-menu" class="hidden md:hidden flex flex-col bg-[#000957] text-white px-4 py-2">
-            <a href="tentang-kami.html" class="py-2 border-b border-gray-700">TENTANG KAMI</a>
-            <a href="properti.html" class="py-2 border-b border-gray-700">PRODUK PERUMAHAN</a>
-            <a href="#" class="py-2">KONTAK KAMI</a>
-        </div>
-    </header>
-    <div class="fixed bottom-6 right-6 z-50"> <!-- Tambahkan z-50 -->
-        <a href="https://wa.me/6287780759897" target="_blank"
-            class="flex items-center bg-green-500 text-white py-3 px-4 rounded-full shadow-lg hover:bg-green-700 transition duration-300">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" class="w-6 h-6 mr-2" alt="WA">
-            Chat WhatsApp
+  <body class="font-roboto">
+    <header
+      id="navbar"
+      class="bg-white text-black py-4 fixed top-0 left-0 w-full z-50 transition duration-300"
+    >
+      <div class="container mx-auto flex justify-between items-center px-4">
+        <!-- Logo -->
+        <a href="index.html">
+          <div class="flex items-center">
+            <img
+              alt="Company logo"
+              class="h-10 mr-3"
+              height="40"
+              src="Assets/logo.png"
+              width="40"
+            />
+            <span class="text-lg font-bold">
+              PT. PALWASHA WIRATAMA MANDIRI
+            </span>
+          </div>
         </a>
+        <!-- Hamburger Menu -->
+        <button
+          class="block md:hidden text-black text-2xl focus:outline-none"
+          id="menu-toggle"
+        >
+          <i class="fas fa-bars"></i>
+        </button>
+        <!-- Navigation -->
+        <nav class="hidden md:flex space-x-4" id="menu">
+          <a class="hover:underline font-bold py-2 px-4" href="index.html">
+            HOME
+          </a>
+          <a
+            class="hover:underline font-bold py-2 px-4"
+            href="tentang-kami.html"
+          >
+            TENTANG
+          </a>
+          <a class="hover:underline font-bold py-2 px-4" href="properti.html">
+            PRODUK PERUMAHAN
+          </a>
+          <a
+            class="bg-blue-500 text-white hover:text-white font-medium rounded-full py-2 px-4 hover:bg-orange-700 transition duration-300 ease-in-out"
+            href="kontak-kami.html"
+          >
+            HUBUNGI
+          </a>
+        </nav>
+      </div>
+      <!-- Mobile Navigation -->
+      <div
+        class="hidden md:hidden flex flex-col bg-[#000957] text-white px-4 py-2"
+        id="mobile-menu"
+      >
+        <a class="py-2 border-b border-gray-700" href="index.html"> HOME </a>
+        <a class="py-2 border-b border-gray-700" href="tentang-kami.html">
+          TENTANG
+        </a>
+        <a class="py-2 border-b border-gray-700" href="properti.html">
+          PRODUK PERUMAHAN
+        </a>
+        <a class="py-2" href="kontak-kami.html"> HUBUNGI </a>
+      </div>
+    </header>
+
+    <div class="fixed bottom-6 right-6 z-50">
+      <!-- Tambahkan z-50 -->
+      <a
+        href="https://wa.me/6287780759897"
+        target="_blank"
+        class="flex items-center bg-blue-500 text-white py-3 px-4 rounded-full shadow-lg hover:bg-green-700 transition duration-300"
+      >
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"
+          class="w-6 h-6 mr-2"
+          alt="WA"
+        />
+        Chat WhatsApp
+      </a>
     </div>
     <!-- Hero Section -->
     <section class="relative">
-        <img src="Assets/navbar.png" alt="Hero Image" class="w-full h-[500px] md:h-[600px] object-cover">
-        <div class="absolute inset-0 bg-gray-900 bg-opacity-75 flex flex-col items-center justify-center">
-            <h1 class="text-2xl md:text-4xl font-bold text-white">YOUR TRUSTED PROPERTY DEVELOPER</h1>
-            <p class="mt-2 text-sm md:text-base w-full md:w-1/2 text-white">Wujudkan impian Anda untuk memiliki hunian
-                yang nyaman,
-                aman, terjangkau dan berkualitas.</p>
-            <a href="https://wa.me/6287780759897" target="_blank"
-                class="mt-4 bg-[#000957] hover:bg-[#344CB7] text-white py-2 px-6 rounded">Hubungi Kami</a>
-        </div>
-        <!-- <div
+      <img
+        src="Assets/navbar.png"
+        alt="Hero Image"
+        class="w-full h-[500px] md:h-[600px] object-cover"
+      />
+      <div
+        class="absolute inset-0 bg-gray-900 bg-opacity-75 flex flex-col items-center justify-center"
+      >
+        <h1 class="text-2xl md:text-4xl font-bold text-white">
+          YOUR TRUSTED PROPERTY DEVELOPER
+        </h1>
+        <p class="mt-2 text-sm md:text-base w-full md:w-1/2 text-white">
+          Wujudkan impian Anda untuk memiliki hunian yang nyaman, aman,
+          terjangkau dan berkualitas.
+        </p>
+        <!-- <a
+          href="https://wa.me/6287780759897"
+          target="_blank"
+          class="mt-4 bg-[#000957] hover:bg-blue-400 hover:text-black text-white py-2 px-6 rounded"
+          >Hubungi </a
+        > -->
+        <a
+          href="https://wa.me/6287780759897"
+          target="_blank"
+          class="mt-4 hover:bg-orange-700 hover:text-white py-2 px-6 rounded transition duration-300 delay-100 ease-in-out bg-blue-500 text-white font-bold hover:scale-105"
+        >
+          Hubungi
+        </a>
+      </div>
+      <!-- <div
             class="absolute inset-0 flex flex-col justify-center items-center text-center text-white bg-black bg-opacity-50 px-4">
             <h1 class="text-2xl md:text-4xl font-bold">YOUR TRUSTED PROPERTY DEVELOPER</h1>
             <p class="mt-2 text-sm md:text-base w-full md:w-1/2">Wujudkan impian Anda untuk memiliki hunian yang nyaman,
                 aman, terjangkau dan berkualitas.</p>
-            <button class="mt-4 bg-[#000957] hover:bg-[#344CB7] text-white py-2 px-6 rounded">Hubungi Kami</button>
+            <button class="mt-4 bg-[#000957] hover:bg-[#344CB7] text-white py-2 px-6 rounded">Hubungi </button>
         </div> -->
     </section>
 
     <!-- Property Section -->
     <section class="py-8 bg-gray-100 px-4">
-        <div class="container mx-auto">
-            <div class="py-1">
-                <!-- Header Section -->
-                <div class="text-center mb-8">
-                    <h1 class="text-3xl font-bold text-blue-900">
-                        PROPERTI KAMI
-                    </h1>
-                    <p class="text-gray-600">
-                        Perumahan kami hadir di berbagai lokasi strategis
-                    </p>
-                </div>
+      <div class="container mx-auto">
+        <div class="py-1">
+          <!-- Header Section -->
+          <div class="text-center mb-8">
+            <h1 class="text-3xl font-bold text-blue-900">PROPERTI</h1>
+            <p class="text-gray-600">
+              Perumahan hadir di berbagai lokasi strategis
+            </p>
+          </div>
 
-                <!-- Properties Grid -->
-                <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
-                    <!-- First Property -->
-                    <div class="relative bg-cover bg-center rounded-lg shadow-lg"
-                        style="height: 300px; background-image: url('Assets/unit 2.png');">
-                        <a href="#"
-                            class="absolute top-2 left-2 bg-red-500 text-white text-sm px-3 py-1 rounded-full flex items-center">
-                            <i class="fas fa-map-marker-alt mr-1"></i> Brebes
-                        </a>
-                        <a href="#"
-                            class="absolute bottom-2 left-2 right-2 bg-blue-500 text-white text-lg px-4 py-2 rounded-lg flex items-center justify-between transform transition-transform duration-300 hover:scale-105">
-                            Griya Amarilis
-                            <i class="fas fa-chevron-right"></i>
-                        </a>
-                    </div>
-
-                    <!-- Second Property -->
-                    <div class="relative bg-cover bg-center rounded-lg shadow-lg"
-                        style="height: 300px; background-image: url('Assets/unit 1.png');">
-                        <a href="#"
-                            class="absolute top-2 left-2 bg-red-500 text-white text-sm px-3 py-1 rounded-full flex items-center">
-                            <i class="fas fa-map-marker-alt mr-1"></i> Brebes
-                        </a>
-                        <a href="properti.html"
-                            class="absolute bottom-2 left-2 right-2 bg-blue-500 text-white text-lg px-4 py-2 rounded-lg flex items-center justify-between transform transition-transform duration-300 hover:scale-105">
-                            Graha Bougenville
-                            <i class="fas fa-chevron-right"></i>
-                        </a>
-                    </div>
-
-                </div>
+          <!-- Properties Grid -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+            <!-- First Property -->
+            <div
+              class="relative bg-cover bg-center rounded-lg shadow-lg"
+              style="height: 300px; background-image: url('Assets/unit 2.png')"
+            >
+              <a
+                href="#"
+                class="absolute top-2 left-2 bg-red-500 text-white text-sm px-3 py-1 rounded-full flex items-center"
+              >
+                <i class="fas fa-map-marker-alt mr-1"></i> Brebes
+              </a>
+              <a
+                href="properti.html"
+                class="absolute bottom-2 left-2 right-2 bg-blue-500 text-white text-lg px-4 py-2 rounded-lg flex items-center justify-between transform transition-transform duration-300 hover:scale-105"
+              >
+                Griya Amarilis
+                <i class="fas fa-chevron-right"></i>
+              </a>
             </div>
+
+            <!-- Second Property -->
+            <div
+              class="relative bg-cover bg-center rounded-lg shadow-lg"
+              style="height: 300px; background-image: url('Assets/unit 1.png')"
+            >
+              <a
+                href="#"
+                class="absolute top-2 left-2 bg-red-500 text-white text-sm px-3 py-1 rounded-full flex items-center"
+              >
+                <i class="fas fa-map-marker-alt mr-1"></i> Brebes
+              </a>
+              <a
+                href="properti.html"
+                class="absolute bottom-2 left-2 right-2 bg-blue-500 text-white text-lg px-4 py-2 rounded-lg flex items-center justify-between transform transition-transform duration-300 hover:scale-105"
+              >
+                Graha Bougenville
+                <i class="fas fa-chevron-right"></i>
+              </a>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <section class="py-8 bg-gray-100 px-4">
-        <div class="container mx-auto flex flex-col md:flex-row items-center">
-            <div class="max-w-4xl mx-auto px-4 py-8">
-                <h2 class="text-3xl font-semibold text-center mb-8 text-[#000957]">Frequently Asked Questions</h2>
+      <div class="container mx-auto flex flex-col md:flex-row items-center">
+        <div class="max-w-4xl mx-auto px-4 py-8 w-full md:w-[890px]">
+          <h2 class="text-3xl font-semibold text-center mb-8 text-[#000957]">
+            Frequently Asked Questions
+          </h2>
 
-                <div class="space-y-6 w-[890px]">
-                    <!-- FAQ Item 1 -->
-                    <div class="border border-gray-300 rounded-lg shadow-lg overflow-hidden">
-                        <button
-                            class="w-full text-left px-6 py-4 text-xl font-medium bg-gray-200 hover:bg-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all duration-300 ease-in-out flex justify-between items-center"
-                            onclick="toggleAnswer(0)">
-                            <span class="font-semibold">Apa Saja Syarat Pengajuan KPR ?</span>
-                            <svg id="arrow-0" class="w-6 h-6 transform transition-transform duration-300"
-                                viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd"
-                                    d="M10 13a1 1 0 0 1-.707-.293l-4-4a1 1 0 0 1 1.414-1.414L10 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414l-4 4A1 1 0 0 1 10 13z"
-                                    clip-rule="evenodd"></path>
-                            </svg>
-                        </button>
-                        <div id="answer-0"
-                            class="hidden px-6 py-4 text-gray-700 bg-gray-50 overflow-hidden max-h-0 transition-all duration-500 ease-in-out">
-                            ?
-                        </div>
-                    </div>
-
-                    <!-- FAQ Item 2 -->
-                    <div class="border border-gray-300 rounded-lg shadow-lg overflow-hidden">
-                        <button
-                            class="w-full text-left px-6 py-4 text-xl font-medium bg-gray-200 hover:bg-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all duration-300 ease-in-out flex justify-between items-center"
-                            onclick="toggleAnswer(1)">
-                            <span class="font-semibold">Berapa lama proses pengajuan KPR hingga disetujui ?</span>
-                            <svg id="arrow-1" class="w-6 h-6 transform transition-transform duration-300"
-                                viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd"
-                                    d="M10 13a1 1 0 0 1-.707-.293l-4-4a1 1 0 0 1 1.414-1.414L10 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414l-4 4A1 1 0 0 1 10 13z"
-                                    clip-rule="evenodd"></path>
-                            </svg>
-                        </button>
-                        <div id="answer-1"
-                            class="hidden px-6 py-4 text-gray-700 bg-gray-50 overflow-hidden max-h-0 transition-all duration-500 ease-in-out">
-                            Pengajuan
-                        </div>
-                    </div>
-
-                    <!-- FAQ Item 3 -->
-                    <div class="border border-gray-300 rounded-lg shadow-lg overflow-hidden">
-                        <button
-                            class="w-full text-left px-6 py-4 text-xl font-medium bg-gray-200 hover:bg-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all duration-300 ease-in-out flex justify-between items-center"
-                            onclick="toggleAnswer(2)">
-                            <span class="font-semibold">Bank mana saja yang bekerja sama dengan proyek ini ?</span>
-                            <svg id="arrow-2" class="w-6 h-6 transform transition-transform duration-300"
-                                viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd"
-                                    d="M10 13a1 1 0 0 1-.707-.293l-4-4a1 1 0 0 1 1.414-1.414L10 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414l-4 4A1 1 0 0 1 10 13z"
-                                    clip-rule="evenodd"></path>
-                            </svg>
-                        </button>
-                        <div id="answer-2"
-                            class="hidden px-6 py-4 text-gray-700 bg-gray-50 overflow-hidden max-h-0 transition-all duration-500 ease-in-out">
-                            Bank
-                        </div>
-                    </div>
-                </div>
+          <div class="space-y-6">
+            <!-- FAQ Item 1 -->
+            <div
+              class="border border-gray-300 rounded-lg shadow-lg overflow-hidden"
+            >
+              <button
+                class="w-full text-left px-6 py-4 text-lg md:text-xl font-medium bg-gray-200 hover:bg-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all duration-300 ease-in-out flex justify-between items-center"
+                onclick="toggleAnswer(0)"
+              >
+                <span class="font-semibold"
+                  >Apa Saja Syarat Pengajuan KPR?</span
+                >
+                <svg
+                  id="arrow-0"
+                  class="w-6 h-6 transform transition-transform duration-300"
+                  viewBox="0 0 20 20"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M10 13a1 1 0 0 1-.707-.293l-4-4a1 1 0 0 1 1.414-1.414L10 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414l-4 4A1 1 0 0 1 10 13z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+              </button>
+              <div
+                id="answer-0"
+                class="faq-answer px-6 py-4 text-gray-700 bg-gray-50"
+              >
+                Syarat pengajuan KPR...
+              </div>
             </div>
+
+            <!-- FAQ Item 2 -->
+            <div
+              class="border border-gray-300 rounded-lg shadow-lg overflow-hidden"
+            >
+              <button
+                class="w-full text-left px-6 py-4 text-lg md:text-xl font-medium bg-gray-200 hover:bg-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all duration-300 ease-in-out flex justify-between items-center"
+                onclick="toggleAnswer(1)"
+              >
+                <span class="font-semibold"
+                  >Berapa lama proses pengajuan KPR hingga disetujui?</span
+                >
+                <svg
+                  id="arrow-1"
+                  class="w-6 h-6 transform transition-transform duration-300"
+                  viewBox="0 0 20 20"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M10 13a1 1 0 0 1-.707-.293l-4-4a1 1 0 0 1 1.414-1.414L10 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414l-4 4A1 1 0 0 1 10 13z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+              </button>
+              <div
+                id="answer-1"
+                class="faq-answer px-6 py-4 text-gray-700 bg-gray-50"
+              >
+                Proses pengajuan KPR biasanya...
+              </div>
+            </div>
+
+            <!-- FAQ Item 3 -->
+            <div
+              class="border border-gray-300 rounded-lg shadow-lg overflow-hidden"
+            >
+              <button
+                class="w-full text-left px-6 py-4 text-lg md:text-xl font-medium bg-gray-200 hover:bg-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all duration-300 ease-in-out flex justify-between items-center"
+                onclick="toggleAnswer(2)"
+              >
+                <span class="font-semibold"
+                  >Bank mana saja yang bekerja sama dengan proyek ini?</span
+                >
+                <svg
+                  id="arrow-2"
+                  class="w-6 h-6 transform transition-transform duration-300"
+                  viewBox="0 0 20 20"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M10 13a1 1 0 0 1-.707-.293l-4-4a1 1 0 0 1 1.414-1.414L10 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414l-4 4A1 1 0 0 1 10 13z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+              </button>
+              <div
+                id="answer-2"
+                class="faq-answer px-6 py-4 text-gray-700 bg-gray-50"
+              >
+                Bank yang bekerja sama adalah...
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
 
-        <script>
-            function toggleAnswer(index) {
-                const answer = document.getElementById(`answer-${index}`);
-                const arrow = document.getElementById(`arrow-${index}`);
+      <script>
+        function toggleAnswer(index) {
+          const answer = document.getElementById(`answer-${index}`);
+          const arrow = document.getElementById(`arrow-${index}`);
 
-                answer.classList.toggle('hidden');
-                // Smoothly expand/collapse answer with max-height transition
-                if (answer.classList.contains('hidden')) {
-                    answer.style.maxHeight = '0';
-                    arrow.style.transform = 'rotate(0deg)'; // Rotate arrow back
-                } else {
-                    answer.style.maxHeight = answer.scrollHeight + 'px'; // Use scrollHeight for dynamic content
-                    arrow.style.transform = 'rotate(180deg)'; // Rotate arrow when expanded
-                }
-            }
-        </script>
+          answer.classList.toggle("active");
+          arrow.style.transform = answer.classList.contains("active")
+            ? "rotate(180deg)"
+            : "rotate(0deg)";
+        }
+      </script>
+
+      <style>
+        .faq-answer {
+          max-height: 0;
+          overflow: hidden;
+          opacity: 0;
+          transition: max-height 0.5s ease-in-out, opacity 0.3s ease-in-out;
+        }
+
+        .faq-answer.active {
+          max-height: 300px;
+          /* Atur tinggi sesuai konten */
+          opacity: 1;
+        }
+      </style>
     </section>
     <!-- Location Section -->
     <section class="py-8 bg-gray-100 px-4">
-        <h2 class="text-2xl mb-8 md:text-3xl font-bold text-center text-[#000957]">LOKASI KAMI</h2>
-        <div class="w-full max-w-7xl mx-auto px-4">
-            <iframe class="w-full h-[450px] rounded-lg shadow-lg"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3360.5666898255586!2d109.0462579581528!3d-6.866243602052028!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6fbb0035ed77ed%3A0x4953dc73a905a082!2sKantor%20Pemasaran%20Griya%20Amarilis%20dan%20Graha%20Bougenville!5e1!3m2!1sid!2sid!4v1739075985281!5m2!1sid!2sid"
-                style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-            </iframe>
-        </div>
+      <h2
+        class="text-2xl mb-8 md:text-3xl font-bold text-center text-[#000957]"
+      >
+        LOKASI
+      </h2>
+      <div class="w-full max-w-7xl mx-auto px-4">
+        <iframe
+          class="w-full h-[450px] rounded-lg shadow-lg"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3360.5666898255586!2d109.0462579581528!3d-6.866243602052028!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6fbb0035ed77ed%3A0x4953dc73a905a082!2sKantor%20Pemasaran%20Griya%20Amarilis%20dan%20Graha%20Bougenville!5e1!3m2!1sid!2sid!4v1739075985281!5m2!1sid!2sid"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        >
+        </iframe>
+      </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="bg-[#000957] text-white py-12" id="KONTAK KAMI">
-        <div class="container mx-auto px-4">
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
-                <!-- Logo and Company Name -->
-                <div class="flex flex-col items-center md:items-start">
-                    <img alt="HR Group logo with a crown on top" class="ml-24 mb-4 w-[100px] h-[100px]" height="100"
-                        src="Assets/logo.png" width="100" />
-                    <p class="text-center md:text-left font-bold text-lg text-[#FFEB00]">
-                        PT. PALWASHA WIRATAMA MANDIRI
-                    </p>
-                </div>
-                <!-- Navigation Links -->
-                <div class="flex flex-col text-center md:text-left">
-                    <a class="block text-[#FFEB00] font-bold mb-4" href="#">
-                        HOME
-                    </a>
-                    <a class="block text-[#FFEB00] font-bold mb-4" href="tentang-kami.html">
-                        TENTANG KAMI
-                    </a>
-                    <a class="block text-[#FFEB00] font-bold mb-4" href="properti.html">
-                        PRODUK PERUMAHAN
-                    </a>
-                    <a class="block text-[#FFEB00] font-bold" href="#">
-                        KONTAK KAMI
-                    </a>
-                </div>
-                <!-- KONTAK KAMI Information -->
-                <div class="text-center md:text-left">
-                    <h2 class="text-[#FFEB00] font-bold mb-4">
-                        KONTAK KAMI
-                    </h2>
-                    <p class="mb-2">
-                        Alamat: Komplek Ruko Ciblon Waterboom, Jl. Yos Sudarso No. 02 Pasarbatang Brebes
-                    </p>
-                    <p class="mb-2">
-                        Email: pt.palwashawiratama@gmail.com
-                    </p>
-                    <p class="mb-2">
-                        Phone: +62 877 8075 9897
-                    </p>
-                </div>
-            </div>
-            <div class="text-center mt-8">
-                <p>
-                    Copyright © 2024 PT. PALWASHA WIRATAMA MANDIRI
-                </p>
-            </div>
-        </div>
-    </footer>
-    <script>
-        document.getElementById("menu-toggle").addEventListener("click", function () {
-            document.getElementById("mobile-menu").classList.toggle("hidden");
-        });
-    </script>
-</body>
+    <footer class="bg-blue-600 text-white py-12 relative z-10" id="HUBUNGI">
+      <div class="container mx-auto px-4">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+          <!-- Logo & Company Name -->
+          <div
+            class="flex flex-col items-center md:items-start text-center md:text-left"
+          >
+            <img
+              alt="HR Group logo with a crown on top"
+              class="mx-auto mb-4 w-[100px] h-[100px] border-4 border-white rounded-full"
+              height="100"
+              src="Assets/logo.png"
+              width="100"
+            />
+            <p class="font-bold text-lg text-[#FFEB00]">
+              PT. PALWASHA WIRATAMA MANDIRI
+            </p>
+          </div>
 
+          <!-- Navigation Links -->
+          <div class="flex flex-col text-center md:text-left">
+            <a class="block text-[#FFEB00] font-bold mb-4" href="#"> HOME </a>
+            <a
+              class="block text-[#FFEB00] font-bold mb-4"
+              href="tentang-kami.html"
+            >
+              TENTANG
+            </a>
+            <a class="block text-[#FFEB00] font-bold mb-4" href="properti.html">
+              PRODUK PERUMAHAN
+            </a>
+            <a class="block text-[#FFEB00] font-bold" href="#"> HUBUNGI </a>
+          </div>
+
+          <!-- Contact Information -->
+          <div class="text-center md:text-left">
+            <h2 class="text-[#FFEB00] font-bold mb-4">HUBUNGI</h2>
+            <p class="mb-2">
+              Alamat: Komplek Ruko Ciblon Waterboom, Jl. Yos Sudarso No. 02
+              Pasarbatang Brebes
+            </p>
+            <p class="mb-2">Email: pt.palwashawiratama@gmail.com</p>
+            <p class="mb-2">Phone: +62 877 8075 9897</p>
+          </div>
+        </div>
+
+        <!-- Copyright -->
+        <div class="text-center mt-8">
+          <p>Copyright © 2024 PT. PALWASHA WIRATAMA MANDIRI</p>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      document
+        .getElementById("menu-toggle")
+        .addEventListener("click", function () {
+          document.getElementById("mobile-menu").classList.toggle("hidden");
+        });
+
+      window.addEventListener("scroll", function () {
+        let navbar = document.getElementById("navbar");
+        if (window.scrollY > 50) {
+          navbar.classList.add("bg-white/80", "shadow-md");
+          navbar.classList.remove("bg-white");
+        } else {
+          navbar.classList.add("bg-white");
+          navbar.classList.remove("bg-white/80", "shadow-md");
+        }
+      });
+    </script>
+  </body>
 </html>
