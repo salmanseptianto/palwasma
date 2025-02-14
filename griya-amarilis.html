@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PT. PALWASHA WIRATAMA MANDIRI</title>
+  <link rel="icon" type="image/png" href="Assets/logo.png" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+</head>
+
+<body class="font-roboto">
+  <!-- Header -->
+  <header id="navbar" class="bg-white text-black py-4 fixed top-0 left-0 w-full z-50 transition duration-300">
+    <div class="container mx-auto flex justify-between items-center px-4">
+      <!-- Logo -->
+      <a href="index.html">
+        <div class="flex items-center">
+          <img alt="Company logo" class="h-10 mr-3" height="40" src="Assets/logo.png" width="40" />
+          <span class="text-lg font-bold">
+            PT. PALWASHA WIRATAMA MANDIRI
+          </span>
+        </div>
+      </a>
+      <!-- Hamburger Menu -->
+      <button class="block md:hidden text-black text-2xl focus:outline-none" id="menu-toggle">
+        <i class="fas fa-bars"></i>
+      </button>
+      <!-- Navigation -->
+      <nav class="hidden md:flex items-center space-x-4" id="menu">
+        <a class="hover:underline font-bold py-2 px-4" href="index.html">
+          HOME
+        </a>
+        <a class="hover:underline font-bold py-2 px-4" href="tentang-kami.html">
+          TENTANG
+        </a>
+        <div class="relative group">
+          <a class="hover:underline font-bold py-2 px-4 cursor-pointer">
+            PRODUK PERUMAHAN
+          </a>
+          <div
+            class="absolute left-0 mt-2 w-56 bg-white border rounded-lg shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-opacity duration-200">
+            <a href="properti.html" class="block px-4 py-2 hover:bg-gray-100">Griya Amarilis</a>
+            <a href="properti2.html" class="block px-4 py-2 hover:bg-gray-100">Graha Bougenville</a>
+          </div>
+        </div>
+        <a class="bg-blue-500 text-white hover:text-white font-medium rounded-full py-2 px-4 hover:bg-orange-700 transition duration-300 ease-in-out"
+          href="kontak-kami.html">
+          HUBUNGI
+        </a>
+      </nav>
+    </div>
+    <!-- Mobile Navigation -->
+    <div class="hidden md:hidden flex flex-col  text-black px-4 py-2" id="mobile-menu">
+      <a class="py-2 border-b border-gray-700" href="index.html"> HOME </a>
+      <a class="py-2 border-b border-gray-700" href="tentang-kami.html">
+        TENTANG
+      </a>
+      <a class="py-2 border-b border-gray-700" href="properti.html">
+        PRODUK PERUMAHAN
+      </a>
+      <a class="py-2" href="kontak-kami.html"> HUBUNGI </a>
+    </div>
+  </header>
+
+  <div class="fixed bottom-6 right-6 z-50">
+    <!-- Tambahkan z-50 -->
+    <a href="https://wa.me/6287780759897" target="_blank"
+      class="flex items-center bg-green-500 text-white py-3 px-4 rounded-full shadow-lg hover:bg-green-700 transition duration-300">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" class="w-6 h-6 mr-2" alt="WA" />
+      Chat WhatsApp
+    </a>
+  </div>
+  <!-- Hero Section -->
+  <section class="relative">
+    <img src="Assets/navbar.png" alt="Hero Image" class="w-full h-[500px] md:h-[600px] object-cover" />
+    <div class="absolute inset-0 bg-gray-900 bg-opacity-75 flex flex-col items-center justify-center">
+      <h1 class="text-white text-3xl font-bold uppercase">
+        PRODUK PERUMAHAN
+      </h1>
+      <div class="text-white mt-2">
+        <a class="text-white" href="index.html">Home</a>
+        <span class="mx-2">&raquo;</span>
+        <span class="text-orange-600">Produk Perumahan</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Us Section -->
+  <section class="bg-gray-200 px-4">
+    <div class="container mx-auto p-4">
+      <!-- Tipe 50 -->
+      <div class="bg-white p-6 mb-6 shadow-md rounded-lg">
+        <h1 class="text-center mb-6 text-2xl font-bold text-[#000957]" data-aos="fade-up">
+          PERUMAHAN SUBSIDI GRIYA AMARILIS
+        </h1>
+        <div class="flex flex-col md:flex-row gap-8" data-aos="fade-up">
+          <div class="md:w-1/2">
+            <h2 class="text-[#000957] text-lg font-bold">Rumah</h2>
+            <h1 class="text-[#000957] text-4xl font-bold">Tipe 30 / 60</h1>
+            <p class="text-gray-600 mt-2">LB : 30 LT : 60</p>
+            <ul class="list-disc list-inside mt-4 text-gray-700 space-y-2">
+              <li>2 K. Tidur</li>
+              <li>1 K. Mandi</li>
+              <li>R. Tamu</li>
+              <li>Dapur, Carport</li>
+              <li>Taman Depan</li>
+              <li>Security &amp; CCTV 24Jam</li>
+            </ul>
+          </div>
+          <div class="md:w-1/2 mt-4 md:mt-0 md:pl-6">
+            <img alt="Floor plan and exterior view of Tipe 50 house" height="300" src="Assets/unit.jpg" width="400" />
+          </div>
+        </div>
+
+        <hr class="my-6 border-t-2 border-gray-400" />
+
+        <div class="flex flex-col md:flex-row gap-8 mt-8" data-aos="fade-up">
+          <div class="md:w-1/2">
+            <h2 class="text-[#000957] text-lg font-bold">Rumah</h2>
+            <h1 class="text-[#000957] text-4xl font-bold">Tipe 30 / 64</h1>
+            <p class="text-gray-600 mt-2">LB : 30 LT : 64</p>
+            <ul class="list-disc list-inside mt-4 text-gray-700 space-y-2">
+              <li>2 K. Tidur</li>
+              <li>1 K. Mandi</li>
+              <li>R. Tamu</li>
+              <li>Dapur, Carport</li>
+              <li>Taman Depan</li>
+              <li>Security &amp; CCTV 24Jam</li>
+            </ul>
+          </div>
+          <div class="md:w-1/2 mt-4 md:mt-0 md:pl-6">
+            <img alt="Floor plan and exterior view of Tipe 50 house" height="300" src="Assets/unit 1.png" width="400" />
+          </div>
+        </div>
+        <h1 class="text-center mb-6 text-2xl font-bold text-[#000957] mt-9 uppercase" data-aos="fade-up">
+          Spesifikasi Bangunan
+        </h1>
+        <div class="w-full md:w-3/4 mx-auto" data-aos="fade-up">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <!-- First Column -->
+            <div>
+              <div class="border rounded-lg overflow-hidden shadow" id="accordion-1">
+                <button
+                  class="accordion-title flex justify-between items-center w-full px-4 py-3 text-lg font-medium text-gray-700 bg-gray-100 hover:bg-gray-200">
+                  Pondasi
+                  <i class="bx bx-chevron-down transition-transform" id="arrow-1"></i>
+                </button>
+                <div class="accordion-content hidden px-4 py-2 bg-white">
+                  <ul class="list-disc pl-6 text-gray-700">
+                    <li>Batu Kali</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="border rounded-lg overflow-hidden shadow mt-4" id="accordion-2">
+                <button
+                  class="accordion-title flex justify-between items-center w-full px-4 py-3 text-lg font-medium text-gray-700 bg-gray-100 hover:bg-gray-200">
+                  Konstruksi
+                  <i class="bx bx-chevron-down transition-transform" id="arrow-2"></i>
+                </button>
+                <div class="accordion-content hidden px-4 py-2 bg-white">
+                  <ul class="list-disc pl-6 text-gray-700">
+                    <li>Beton Bertulang</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="border rounded-lg overflow-hidden shadow mt-4" id="accordion-2">
+                <button
+                  class="accordion-title flex justify-between items-center w-full px-4 py-3 text-lg font-medium text-gray-700 bg-gray-100 hover:bg-gray-200">
+                  Dinding
+                  <i class="bx bx-chevron-down transition-transform" id="arrow-2"></i>
+                </button>
+                <div class="accordion-content hidden px-4 py-2 bg-white">
+                  <ul class="list-disc pl-6 text-gray-700">
+                    <li>Bata Merah</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="border rounded-lg overflow-hidden shadow mt-4" id="accordion-7">
+                <button
+                  class="accordion-title flex justify-between items-center w-full px-4 py-3 text-lg font-medium text-gray-700 bg-gray-100 hover:bg-gray-200">
+                  Pintu
+                  <i class="bx bx-chevron-down transition-transform" id="arrow-7"></i>
+                </button>
+                <div class="accordion-content hidden px-4 py-2 bg-white">
+                  <ul class="list-disc pl-6 text-gray-700">
+                    <li>Pabrikasi</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="border rounded-lg overflow-hidden shadow mt-4" id="accordion-7">
+                <button
+                  class="accordion-title flex justify-between items-center w-full px-4 py-3 text-lg font-medium text-gray-700 bg-gray-100 hover:bg-gray-200">
+                  Plafon
+                  <i class="bx bx-chevron-down transition-transform" id="arrow-7"></i>
+                </button>
+                <div class="accordion-content hidden px-4 py-2 bg-white">
+                  <ul class="list-disc pl-6 text-gray-700">
+                    <li>Gypsum</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="border rounded-lg overflow-hidden shadow mt-4" id="accordion-7">
+                <button
+                  class="accordion-title flex justify-between items-center w-full px-4 py-3 text-lg font-medium text-gray-700 bg-gray-100 hover:bg-gray-200">
+                  Lantai
+                  <i class="bx bx-chevron-down transition-transform" id="arrow-7"></i>
+                </button>
+                <div class="accordion-content hidden px-4 py-2 bg-white">
+                  <ul class="list-disc pl-6 text-gray-700">
+                    <li>Keramik 40 x 40</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- Second Column -->
+            <div>
+              <div class="border rounded-lg overflow-hidden shadow" id="accordion-6">
+                <button
+                  class="accordion-title flex justify-between items-center w-full px-4 py-3 text-lg font-medium text-gray-700 bg-gray-100 hover:bg-gray-200">
+                  Rangka Atap
+                  <i class="bx bx-chevron-down transition-transform" id="arrow-6"></i>
+                </button>
+                <div class="accordion-content hidden px-4 py-2 bg-white">
+                  <ul class="list-disc pl-6 text-gray-700">
+                    <li>Baja Ringan</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="border rounded-lg overflow-hidden shadow mt-4" id="accordion-7">
+                <button
+                  class="accordion-title flex justify-between items-center w-full px-4 py-3 text-lg font-medium text-gray-700 bg-gray-100 hover:bg-gray-200">
+                  Atap
+                  <i class="bx bx-chevron-down transition-transform" id="arrow-7"></i>
+                </button>
+                <div class="accordion-content hidden px-4 py-2 bg-white">
+                  <ul class="list-disc pl-6 text-gray-700">
+                    <li>Genteng</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="border rounded-lg overflow-hidden shadow mt-4" id="accordion-7">
+                <button
+                  class="accordion-title flex justify-between items-center w-full px-4 py-3 text-lg font-medium text-gray-700 bg-gray-100 hover:bg-gray-200">
+                  Kusen
+                  <i class="bx bx-chevron-down transition-transform" id="arrow-7"></i>
+                </button>
+                <div class="accordion-content hidden px-4 py-2 bg-white">
+                  <ul class="list-disc pl-6 text-gray-700">
+                    <li>Kayu Keras</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="border rounded-lg overflow-hidden shadow mt-4" id="accordion-7">
+                <button
+                  class="accordion-title flex justify-between items-center w-full px-4 py-3 text-lg font-medium text-gray-700 bg-gray-100 hover:bg-gray-200">
+                  WC / KM
+                  <i class="bx bx-chevron-down transition-transform" id="arrow-7"></i>
+                </button>
+                <div class="accordion-content hidden px-4 py-2 bg-white">
+                  <ul class="list-disc pl-6 text-gray-700">
+                    <li>Closet Duduk</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="border rounded-lg overflow-hidden shadow mt-4" id="accordion-7">
+                <button
+                  class="accordion-title flex justify-between items-center w-full px-4 py-3 text-lg font-medium text-gray-700 bg-gray-100 hover:bg-gray-200">
+                  Air Bersih
+                  <i class="bx bx-chevron-down transition-transform" id="arrow-7"></i>
+                </button>
+                <div class="accordion-content hidden px-4 py-2 bg-white">
+                  <ul class="list-disc pl-6 text-gray-700">
+                    <li>PDAM</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="border rounded-lg overflow-hidden shadow mt-4" id="accordion-7">
+                <button
+                  class="accordion-title flex justify-between items-center w-full px-4 py-3 text-lg font-medium text-gray-700 bg-gray-100 hover:bg-gray-200">
+                  Listrik
+                  <i class="bx bx-chevron-down transition-transform" id="arrow-7"></i>
+                </button>
+                <div class="accordion-content hidden px-4 py-2 bg-white">
+                  <ul class="list-disc pl-6 text-gray-700">
+                    <li>1300 WATT</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="bg-gray-200 px-4">
+    <div class="container mx-auto p-4">
+      <!-- Tipe 51 -->
+      <div class="bg-[#000957] p-6 shadow-md rounded-lg">
+        <h1 class="text-center mb-6 text-2xl font-bold text-[#FFEB00] mt-4 uppercase" data-aos="fade-up">
+          perumahan komersil GRAHA BOUGENVILE
+        </h1>
+        <div class="flex flex-col md:flex-row" data-aos="fade-up">
+          <div class="md:w-1/2">
+            <h2 class="text-[#FFEB00] text-lg font-bold">Rumah</h2>
+            <h1 class="text-[#FFEB00] text-4xl font-bold">Tipe 50 / 98</h1>
+            <p class="text-gray-300 mt-2">LB : 50 LT : 98</p>
+            <ul class="list-disc list-inside mt-4 text-gray-100">
+              <li>2 K. Tidur</li>
+              <li>1 K. Mandi</li>
+              <li>R. Tamu</li>
+              <li>Dapur, Carport</li>
+              <li>Taman Depan</li>
+              <li>Security &amp; CCTV 24Jam</li>
+            </ul>
+          </div>
+          <div class="md:w-1/2 mt-4 md:mt-0 md:pl-6">
+            <img alt="Floor plan and exterior view of Tipe 51 house" height="300" src="Assets/unit komersil.png"
+              width="400" />
+          </div>
+        </div>
+        <h1 class="text-center mb-6 text-2xl font-bold text-[#FFEB00] mt-9 uppercase" data-aos="fade-up">
+          Spesifikasi Bangunan
+        </h1>
+        <div class="w-full md:w-3/4 mx-auto" data-aos="fade-up">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <!-- First Column -->
+            <div>
+              <div class="border rounded-lg overflow-hidden shadow" id="accordion-1">
+                <button
+                  class="accordion-title flex justify-between items-center w-full px-4 py-3 text-lg font-medium text-gray-700 bg-gray-100 hover:bg-gray-200">
+                  Pondasi
+                  <i class="bx bx-chevron-down transition-transform" id="arrow-1"></i>
+                </button>
+                <div class="accordion-content hidden px-4 py-2 bg-white">
+                  <ul class="list-disc pl-6 text-gray-700">
+                    <li>Batu Kali</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="border rounded-lg overflow-hidden shadow mt-4" id="accordion-2">
+                <button
+                  class="accordion-title flex justify-between items-center w-full px-4 py-3 text-lg font-medium text-gray-700 bg-gray-100 hover:bg-gray-200">
+                  Konstruksi
+                  <i class="bx bx-chevron-down transition-transform" id="arrow-2"></i>
+                </button>
+                <div class="accordion-content hidden px-4 py-2 bg-white">
+                  <ul class="list-disc pl-6 text-gray-700">
+                    <li>Beton Bertulang</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="border rounded-lg overflow-hidden shadow mt-4" id="accordion-2">
+                <button
+                  class="accordion-title flex justify-between items-center w-full px-4 py-3 text-lg font-medium text-gray-700 bg-gray-100 hover:bg-gray-200">
+                  Dinding
+                  <i class="bx bx-chevron-down transition-transform" id="arrow-2"></i>
+                </button>
+                <div class="accordion-content hidden px-4 py-2 bg-white">
+                  <ul class="list-disc pl-6 text-gray-700">
+                    <li>Bata Merah</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="border rounded-lg overflow-hidden shadow mt-4" id="accordion-7">
+                <button
+                  class="accordion-title flex justify-between items-center w-full px-4 py-3 text-lg font-medium text-gray-700 bg-gray-100 hover:bg-gray-200">
+                  Pintu
+                  <i class="bx bx-chevron-down transition-transform" id="arrow-7"></i>
+                </button>
+                <div class="accordion-content hidden px-4 py-2 bg-white">
+                  <ul class="list-disc pl-6 text-gray-700">
+                    <li>Pabrikasi</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="border rounded-lg overflow-hidden shadow mt-4" id="accordion-7">
+                <button
+                  class="accordion-title flex justify-between items-center w-full px-4 py-3 text-lg font-medium text-gray-700 bg-gray-100 hover:bg-gray-200">
+                  Plafon
+                  <i class="bx bx-chevron-down transition-transform" id="arrow-7"></i>
+                </button>
+                <div class="accordion-content hidden px-4 py-2 bg-white">
+                  <ul class="list-disc pl-6 text-gray-700">
+                    <li>Gypsum</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="border rounded-lg overflow-hidden shadow mt-4" id="accordion-7">
+                <button
+                  class="accordion-title flex justify-between items-center w-full px-4 py-3 text-lg font-medium text-gray-700 bg-gray-100 hover:bg-gray-200">
+                  Lantai
+                  <i class="bx bx-chevron-down transition-transform" id="arrow-7"></i>
+                </button>
+                <div class="accordion-content hidden px-4 py-2 bg-white">
+                  <ul class="list-disc pl-6 text-gray-700">
+                    <li>Keramik 40 x 40</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- Second Column -->
+            <div>
+              <div class="border rounded-lg overflow-hidden shadow" id="accordion-6">
+                <button
+                  class="accordion-title flex justify-between items-center w-full px-4 py-3 text-lg font-medium text-gray-700 bg-gray-100 hover:bg-gray-200">
+                  Rangka Atap
+                  <i class="bx bx-chevron-down transition-transform" id="arrow-6"></i>
+                </button>
+                <div class="accordion-content hidden px-4 py-2 bg-white">
+                  <ul class="list-disc pl-6 text-gray-700">
+                    <li>Baja Ringan</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="border rounded-lg overflow-hidden shadow mt-4" id="accordion-7">
+                <button
+                  class="accordion-title flex justify-between items-center w-full px-4 py-3 text-lg font-medium text-gray-700 bg-gray-100 hover:bg-gray-200">
+                  Atap
+                  <i class="bx bx-chevron-down transition-transform" id="arrow-7"></i>
+                </button>
+                <div class="accordion-content hidden px-4 py-2 bg-white">
+                  <ul class="list-disc pl-6 text-gray-700">
+                    <li>Genteng</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="border rounded-lg overflow-hidden shadow mt-4" id="accordion-7">
+                <button
+                  class="accordion-title flex justify-between items-center w-full px-4 py-3 text-lg font-medium text-gray-700 bg-gray-100 hover:bg-gray-200">
+                  Kusen
+                  <i class="bx bx-chevron-down transition-transform" id="arrow-7"></i>
+                </button>
+                <div class="accordion-content hidden px-4 py-2 bg-white">
+                  <ul class="list-disc pl-6 text-gray-700">
+                    <li>Kayu Keras</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="border rounded-lg overflow-hidden shadow mt-4" id="accordion-7">
+                <button
+                  class="accordion-title flex justify-between items-center w-full px-4 py-3 text-lg font-medium text-gray-700 bg-gray-100 hover:bg-gray-200">
+                  WC / KM
+                  <i class="bx bx-chevron-down transition-transform" id="arrow-7"></i>
+                </button>
+                <div class="accordion-content hidden px-4 py-2 bg-white">
+                  <ul class="list-disc pl-6 text-gray-700">
+                    <li>Closet Duduk</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="border rounded-lg overflow-hidden shadow mt-4" id="accordion-7">
+                <button
+                  class="accordion-title flex justify-between items-center w-full px-4 py-3 text-lg font-medium text-gray-700 bg-gray-100 hover:bg-gray-200">
+                  Air Bersih
+                  <i class="bx bx-chevron-down transition-transform" id="arrow-7"></i>
+                </button>
+                <div class="accordion-content hidden px-4 py-2 bg-white">
+                  <ul class="list-disc pl-6 text-gray-700">
+                    <li>PDAM</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="border rounded-lg overflow-hidden shadow mt-4" id="accordion-7">
+                <button
+                  class="accordion-title flex justify-between items-center w-full px-4 py-3 text-lg font-medium text-gray-700 bg-gray-100 hover:bg-gray-200">
+                  Listrik
+                  <i class="bx bx-chevron-down transition-transform" id="arrow-7"></i>
+                </button>
+                <div class="accordion-content hidden px-4 py-2 bg-white">
+                  <ul class="list-disc pl-6 text-gray-700">
+                    <li>1300 WATT</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-gray-200 px-4 py-6">
+    <div class="container mx-auto p-4">
+      <!-- Tipe 50 -->
+      <div class="bg-white p-6 mb-6 shadow-md rounded-lg">
+        <div class="relative text-center px-4 mt-4">
+          <h1 class="text-center mb-6 text-2xl font-bold text-[#000957]" data-aos="fade-up">
+            Denah & Siteplan
+          </h1>
+          <div class="max-w-4xl mx-auto" data-aos="fade-up">
+            <div class="mt-6 flex flex-col md:flex-row md:justify-center gap-2">
+              <button id="floorplan1Button" onclick="toggleView('floorplan1')"
+                class="py-2 px-6 rounded-full transition duration-300 ease-in-out bg-blue-500 text-white hover:bg-blue-700 w-full md:w-auto">
+                Denah Subsidi Griya Amarilis
+              </button>
+              <button id="floorplan2Button" onclick="toggleView('floorplan2')"
+                class="py-2 px-6 rounded-full transition duration-300 ease-in-out bg-gray-500 text-white hover:bg-gray-700 w-full md:w-auto">
+                Denah Komersil Graha Bougenville
+              </button>
+              <button id="siteplanButton" onclick="toggleView('siteplan')"
+                class="py-2 px-6 rounded-full transition duration-300 ease-in-out bg-gray-500 text-white hover:bg-gray-700 w-full md:w-auto">
+                Siteplan
+              </button>
+            </div>
+          </div>
+          <div class="mt-8">
+            <!-- Floorplan Images -->
+            <div id="floorplan1" class="floorplan1" data-aos="fade-up">
+              <div class="overflow-x-auto pb-6">
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 justify-center">
+                  <!-- Type Amber 1 -->
+                  <div class="bg-white rounded-lg shadow-lg p-4">
+                    <div class="text-center mb-4">
+                      <span class="bg-gray-700 text-white py-1 px-3 rounded-full text-sm">
+                        Type 30 / 60
+                      </span>
+                    </div>
+                    <img alt="Site plan of the housing complex" class="w-full rounded-lg" src="Assets/3060.png" />
+                  </div>
+                  <div class="bg-white rounded-lg shadow-lg p-4">
+                    <div class="text-center mb-4">
+                      <span class="bg-gray-700 text-white py-1 px-3 rounded-full text-sm">
+                        Type 30 / 64
+                      </span>
+                    </div>
+                    <img alt="Site plan of the housing complex" class="w-full rounded-lg" src="Assets/3064.png" />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Siteplan Images (hidden initially) -->
+            <div id="floorplan2" class="floorplan hidden" data-aos="fade-up">
+              <div class="bg-white rounded-lg shadow-lg p-4 max-w-2xl mx-auto">
+                <div class="text-center mb-4">
+                  <span class="bg-gray-700 text-white py-1 px-3 rounded-full text-sm">
+                    Type 50 / 98</span>
+                </div>
+                <img alt="Site plan of the housing complex" class="w-full rounded-lg" src="Assets/komersil.jpg" />
+              </div>
+            </div>
+            <div id="siteplan" class="siteplan hidden" data-aos="fade-up">
+              <div class="bg-white p-4 max-w-2xl mx-auto">
+                <div class="text-center mb-4">
+                  <span class="bg-gray-700 text-white py-1 px-3 rounded-full text-sm">
+                    Siteplan Perumahan</span>
+                </div>
+                <img alt="Site plan of the housing complex" class="w-full rounded-lg" src="Assets/siteplan.png" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-blue-600 text-white py-12 relative z-10" id="HUBUNGI">
+    <div class="container mx-auto px-4">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+        <!-- Logo & Company Name -->
+        <div class="flex flex-col items-center md:items-start text-center md:text-left">
+          <img alt="HR Group logo with a crown on top"
+            class="mx-auto mb-4 w-[100px] h-[100px] border-4 border-white rounded-full" height="100"
+            src="Assets/logo.png" width="100" />
+          <p class="font-bold text-lg text-[#FFEB00]">
+            PT. PALWASHA WIRATAMA MANDIRI
+          </p>
+        </div>
+
+        <!-- Navigation Links -->
+        <div class="flex flex-col text-center md:text-left">
+          <a class="block text-[#FFEB00] font-bold mb-4" href="#"> HOME </a>
+          <a class="block text-[#FFEB00] font-bold mb-4" href="tentang-kami.html">
+            TENTANG
+          </a>
+          <a class="block text-[#FFEB00] font-bold mb-4" href="properti.html">
+            PRODUK PERUMAHAN
+          </a>
+          <a class="block text-[#FFEB00] font-bold" href="#"> HUBUNGI </a>
+        </div>
+
+        <!-- Contact Information -->
+        <div class="text-center md:text-left">
+          <h2 class="text-[#FFEB00] font-bold mb-4">HUBUNGI</h2>
+          <p class="mb-2">
+            Alamat: Komplek Ruko Ciblon Waterboom, Jl. Yos Sudarso No. 02
+            Pasarbatang Brebes
+          </p>
+          <p class="mb-2">Email: pt.palwashawiratama@gmail.com</p>
+          <p class="mb-2">Phone: +62 877 8075 9897</p>
+        </div>
+      </div>
+
+      <!-- Copyright -->
+      <div class="text-center mt-8">
+        <p>Copyright © 2024 PT. PALWASHA WIRATAMA MANDIRI</p>
+      </div>
+    </div>
+  </footer>
+  <script>
+    document
+      .getElementById("menu-toggle")
+      .addEventListener("click", function () {
+        document.getElementById("mobile-menu").classList.toggle("hidden");
+      });
+  </script>
+  <script>
+    function toggleView(view) {
+      // Daftar semua elemen yang akan disembunyikan
+      const sections = ["floorplan1", "floorplan2", "siteplan"];
+
+      // Sembunyikan semua elemen
+      sections.forEach((id) => {
+        document.getElementById(id).classList.add("hidden");
+      });
+
+      // Tampilkan elemen yang sesuai dengan tombol yang diklik
+      document.getElementById(view).classList.remove("hidden");
+
+      // Perbarui tampilan tombol (ubah warna untuk tombol aktif)
+      document.querySelectorAll("button").forEach((button) => {
+        button.classList.remove("bg-blue-500", "hover:bg-blue-700");
+        button.classList.add("bg-gray-500", "hover:bg-gray-700");
+      });
+
+      document
+        .getElementById(view + "Button")
+        .classList.remove("bg-gray-500", "hover:bg-gray-700");
+      document
+        .getElementById(view + "Button")
+        .classList.add("bg-blue-500", "hover:bg-blue-700");
+    }
+  </script>
+
+  <script>
+    document.querySelectorAll(".accordion-title").forEach((button) => {
+      button.addEventListener("click", () => {
+        const content = button.nextElementSibling;
+        const icon = button.querySelector("i");
+        content.classList.toggle("hidden");
+        icon.classList.toggle("rotate-180");
+      });
+    });
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000, // Durasi animasi dalam milidetik
+      once: true, // Animasi hanya berjalan sekali
+    });
+  </script>
+
+</body>
+
+</html>
