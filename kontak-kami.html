@@ -42,8 +42,8 @@
           </a>
           <div
             class="absolute left-0 mt-2 w-56 bg-white border rounded-lg shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-opacity duration-200">
-            <a href="properti.html" class="block px-4 py-2 hover:bg-gray-100">Griya Amarilis</a>
-            <a href="properti2.html" class="block px-4 py-2 hover:bg-gray-100">Graha Bougenville</a>
+            <a href="griya-amarilis.html" class="block px-4 py-2 hover:bg-gray-100">Griya Amarilis</a>
+            <a href="graha-bougenville.html" class="block px-4 py-2 hover:bg-gray-100">Graha Bougenville</a>
           </div>
         </div>
         <a class="bg-blue-500 text-white hover:text-white font-medium rounded-full py-2 px-4 hover:bg-orange-700 transition duration-300 ease-in-out"
@@ -53,16 +53,35 @@
       </nav>
     </div>
     <!-- Mobile Navigation -->
-    <div class="hidden md:hidden flex flex-col  text-black px-4 py-2" id="mobile-menu">
+    <div class="hidden md:hidden flex flex-col text-black px-4 py-2" id="mobile-menu">
       <a class="py-2 border-b border-gray-700" href="index.html"> HOME </a>
-      <a class="py-2 border-b border-gray-700" href="tentang-kami.html">
-        TENTANG
-      </a>
-      <a class="py-2 border-b border-gray-700" href="properti.html">
-        PRODUK PERUMAHAN
-      </a>
+      <a class="py-2 border-b border-gray-700" href="tentang-kami.html"> TENTANG </a>
+
+      <!-- Dropdown Produk Perumahan -->
+      <div class="py-2 border-b border-gray-700">
+        <button class="flex justify-between w-full py-2" onclick="toggleDropdown()">
+          PRODUK PERUMAHAN
+          <span id="arrow" class="ml-2 transition-transform">&#9662;</span> <!-- Panah bawah -->
+        </button>
+        <div id="dropdown-menu" class="hidden flex flex-col ml-4 mt-2">
+          <a href="griya-amarilis.html" class="py-2 border-b border-gray-700">Griya Amarilis</a>
+          <a href="graha-bougenville.html" class="py-2">Graha Bougenville</a>
+        </div>
+      </div>
+
       <a class="py-2" href="kontak-kami.html"> HUBUNGI </a>
     </div>
+
+    <script>
+      function toggleDropdown() {
+        const dropdown = document.getElementById("dropdown-menu");
+        const arrow = document.getElementById("arrow");
+
+        dropdown.classList.toggle("hidden");
+        arrow.classList.toggle("rotate-180"); // Rotasi panah saat diklik
+      }
+    </script>
+
   </header>
 
   <div class="fixed bottom-6 right-6 z-50">
