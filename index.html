@@ -23,6 +23,16 @@
       /* Atur tinggi sesuai konten */
       opacity: 1;
     }
+
+    /* Menghilangkan scrollbar */
+    .scrollbar-hide::-webkit-scrollbar {
+      display: none;
+    }
+
+    .scrollbar-hide {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
   </style>
 </head>
 
@@ -264,21 +274,6 @@
       </div>
     </div>
   </section>
-
-  <style>
-    /* Menghilangkan scrollbar */
-    .scrollbar-hide::-webkit-scrollbar {
-      display: none;
-    }
-
-    .scrollbar-hide {
-      -ms-overflow-style: none;
-      scrollbar-width: none;
-    }
-  </style>
-
-
-
   <!-- Location Section -->
   <section class="py-8 bg-gray-100 px-4" data-aos="fade-up">
     <h2 class="text-2xl mb-8 md:text-3xl font-bold text-center text-[#000957]">
@@ -357,9 +352,9 @@
     showSlide(currentIndex);
 
     // Auto-slide every 1 second (1000ms)
-    setInterval(() => {
-      showSlide(currentIndex + 1);
-    }, 5000);
+    // setInterval(() => {
+    //  showSlide(currentIndex + 1);
+    // }, 5000);
 
     nextButton.addEventListener('click', () => {
       showSlide(currentIndex + 1);
