@@ -71,16 +71,6 @@
 
       <a class="py-2" href="kontak-kami.html"> HUBUNGI </a>
     </div>
-
-    <script>
-      function toggleDropdown() {
-        const dropdown = document.getElementById("dropdown-menu");
-        const arrow = document.getElementById("arrow");
-
-        dropdown.classList.toggle("hidden");
-        arrow.classList.toggle("rotate-180"); // Rotasi panah saat diklik
-      }
-    </script>
   </header>
   <div class="fixed bottom-6 right-6 z-50">
     <!-- Tambahkan z-50 -->
@@ -92,18 +82,19 @@
   </div>
 
   <!-- Hero Section -->
-  <section class="relative">
-    <img alt="Hero image showing a modern housing complex" class="w-full h-[500px] md:h-[600px] object-cover"
-      height="600" src="Assets/navbar.png" width="1920" />
-    <div class="absolute inset-0 bg-gray-900 bg-opacity-75 flex flex-col items-center justify-center">
-      <h1 class="text-white text-3xl font-bold uppercase">Tentang Kami</h1>
-      <div class="text-white mt-2">
-        <a class="text-white" href="index.html"> Home </a>
+  <section class="relative w-full h-screen">
+    <img alt="Hero image showing a modern housing complex" class="absolute inset-0 w-full h-full object-cover"
+      src="Assets/navbar.png" />
+    <div class="absolute inset-0 bg-gray-900 bg-opacity-75 flex flex-col items-center justify-center min-h-screen px-4">
+      <h1 class="text-white text-3xl font-bold uppercase text-center">Tentang Kami</h1>
+      <div class="text-white mt-2 text-center">
+        <a class="text-white" href="index.html">Home</a>
         <span class="mx-2"> » </span>
-        <span class="text-orange-600"> Tentang Kami </span>
+        <span class="text-orange-600">Tentang Kami</span>
       </div>
     </div>
   </section>
+
   <!-- About Us Section -->
   <section class="py-8 bg-gray-200 px-4" data-aos="fade-up">
     <div class="container mx-auto flex flex-col md:flex-row items-center">
@@ -181,7 +172,7 @@
 
         <!-- Navigation Links -->
         <div class="flex flex-col text-center md:text-left">
-          <a class="block text-[#FFEB00] font-bold mb-4" href="#"> HOME </a>
+          <a class="block text-[#FFEB00] font-bold mb-4" href="index.html"> HOME </a>
           <a class="block text-[#FFEB00] font-bold mb-4" href="tentang-kami.html">
             TENTANG
           </a>
@@ -223,7 +214,15 @@
       once: true, // Animasi hanya berjalan sekali
     });
   </script>
+  <script>
+    function toggleDropdown() {
+      const dropdown = document.getElementById("dropdown-menu");
+      const arrow = document.getElementById("arrow");
 
+      dropdown.classList.toggle("hidden");
+      arrow.classList.toggle("rotate-180"); // Rotasi panah saat diklik
+    }
+  </script>
 </body>
 
 </html>
